@@ -242,8 +242,8 @@ footer .foot{display:flex;justify-content:space-between;gap:var(--space-3);flex-
 .meta{display:flex;flex-wrap:wrap;gap:10px 28px;margin:0 0 24px;padding:0;list-style:none;font-size:var(--fs-md);color:var(--muted)}
 .meta b{color:var(--ink);font-weight:600}
 .p-hero p.lead{font-size:var(--fs-lead);line-height:var(--lh-lead);max-width:var(--measure);color:var(--ink-soft);margin:0}
-.notice{background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:8px;padding:16px 20px;margin:28px 0 0;font-size:var(--fs-body);max-width:var(--measure);color:var(--ink)}
-.notice b{color:var(--accent-hover);font-weight:600}
+.notice{border-top:1px solid var(--ink);border-bottom:1px solid var(--line);padding:14px 0;margin:28px 0 0;font-size:var(--fs-md);max-width:var(--measure);color:var(--ink-soft)}
+.notice b{color:var(--ink);font-weight:600}
 .p-sec{padding:34px 0;border-top:1px solid var(--line)}
 .p-sec h2{font-family:var(--serif);font-weight:600;font-size:var(--fs-h2);line-height:var(--lh-heading);margin:0 0 18px}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:34px}
