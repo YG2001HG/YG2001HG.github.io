@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Socra: 되묻는 AI 스터디 에이전트 (가칭) — Yeonggyu Lee</title>
-<meta name="description" content="대부분의 AI 학습 도구는 학생에게 답을 알려 줍니다. 이 도구는 되묻도록 설계하고 있습니다. 저는 대학 수업용으로 이 도구를 만드는 4인 팀의 PM이며, AI 코딩 에이전트를 지휘하고 결과를 검토하며 PR 35개(머지 33개)를 열었습니다. 범위는 강의계획서 도우미, 퀴즈 복">
+<title>LearningMate — Yeonggyu Lee</title>
+<meta name="description" content="LearningMate는 대학 LXP(학습경험플랫폼) 안의 AI 튜터·학습 지원 부분입니다. 기존 LMS 위에서 강의자료 화면 안에 퀴즈와 오답노트를 넣어, 교수가 학생의 실제 이해도를 볼 수 있게 했습니다.">
 <link rel="alternate" hreflang="en" href="../../projects/socra.html">
 <link rel="stylesheet" href="../../style.css">
 <script src="../../main.js" defer></script>
@@ -21,10 +21,10 @@
 <main id="main"><div class="wrap">
 <div class="crumb"><a href="../index.html#work">← 전체 사례</a></div>
 <div class="p-hero">
-<h1 class="reveal">Socra: 되묻는 AI 스터디 에이전트 (가칭)</h1>
+<h1 class="reveal">LearningMate</h1>
 <ul class="meta reveal"><li><b>역할:</b> PM 겸 개발자</li><li><b>팀:</b> 4명</li><li><b>소속:</b> 국민대학교 (Global PBL)</li><li><b>기간:</b> 2026.9 – 현재</li></ul>
-<p class="lead reveal">대부분의 AI 학습 도구는 학생에게 답을 알려 줍니다. 이 도구는 되묻도록 설계하고 있습니다. 저는 대학 수업용으로 이 도구를 만드는 4인 팀의 PM이며, AI 코딩 에이전트를 지휘하고 결과를 검토하며 PR 35개(머지 33개)를 열었습니다. 범위는 강의계획서 도우미, 퀴즈 복습, 질문 모아보기, 교수용 대시보드입니다. 무엇을 만들지 정하려고 교수 6명과 교수학습센터를 인터뷰했습니다. 2027년 봄 파일럿을 목표로 하고 있으며, 아직 확정은 아닙니다.</p>
-<div class="notice reveal"><b>상태:</b> 개발 중입니다. “Socra”는 가칭입니다. 실제 사용자는 아직 없습니다. 2027년 봄 파일럿은 목표일 뿐 확정이 아닙니다. 소스 코드는 비공개 저장소에 있습니다. PR 숫자는 2026년 11월 12일 GitHub 기준입니다.</div>
+<p class="lead reveal">LearningMate는 대학 LXP(학습경험플랫폼) 안의 AI 튜터·학습 지원 부분입니다. 기존 LMS 위에서 강의자료 화면 안에 퀴즈와 오답노트를 넣어, 교수가 학생의 실제 이해도를 볼 수 있게 했습니다.</p>
+<div class="notice reveal"><b>상태:</b> 개발 중입니다. “LearningMate”는 가칭입니다. 실제 사용자는 아직 없습니다. 2027년 봄 파일럿은 목표일 뿐 확정이 아닙니다. 소스 코드는 비공개 저장소에 있습니다. PR 숫자는 2026년 11월 12일 GitHub 기준입니다.</div>
 </div>
 <div class="p-sec reveal"><h2>방향을 바꾼 이유</h2><ol class="steps"><li><h3>가정</h3><p>처음에는 교수들이 강의자료를 만드는 일을 힘들어할 거라고 봤습니다.</p></li><li><h3>발견</h3><p>교수 6명과 교수학습센터 인터뷰를 해 보니, 강의자료 만들기는 진짜 문제가 아니었습니다. 어려운 점은 학생이 얼마나 이해했는지 알기 어렵다는 것이었고, 그래서 다음 수업이나 시험을 정하기가 힘들었습니다. 한 교수님은 “중간고사 전엔 이해도를 알기 어렵다”고 했습니다.</p></li><li><h3>결정</h3><p>그래서 학생들이 질문을 더 쉽게 던질 수 있게 바꿨습니다. 강의자료 화면에서 바로 퀴즈를 풀고 오답노트를 남길 수 있고, 교수는 그 질문으로 이해도를 계속 파악합니다.</p></li></ol>
 <p class="story-method">사회학·심리학을 전공한 만큼, 인터뷰를 현장 연구처럼 했습니다. 교수들이 학생을 어떻게 평가하는지에 대한 연구를 먼저 살펴봤습니다.</p>
@@ -34,5 +34,8 @@
 <div class="p-sec reveal"><h2>기술</h2><ul class="tags"><li>Next.js</li><li>React</li><li>TypeScript</li><li>Tailwind</li><li>Postgres / Prisma (Supabase)</li><li>OpenAI API</li><li>Vercel</li></ul></div>
 <div class="pn"><span></span><a href="kmac.html">다음 → 2025 공공기관 인재육성 교육 사업</a></div>
 </div></main>
-<footer><div class="wrap"><div class="foot"><span>국민대학교 사회학·심리학 복수전공 · 2027년 8월 졸업 예정</span><span>포트폴리오 초안</span></div></div></footer>
+<footer><div class="wrap">
+<ul class="foot-contact"><li><a href="mailto:brownjadu@kookmin.ac.kr">brownjadu@kookmin.ac.kr</a></li><li><a href="https://www.linkedin.com/in/yeonggyu-lee-294683342/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/YG2001HG" target="_blank" rel="noopener">GitHub</a></li><li><span class="ph">[이력서 PDF]</span></li></ul>
+<div class="foot"><span>국민대학교 사회학·심리학 복수전공 · 2027년 8월 졸업 예정</span><span>포트폴리오 초안</span></div>
+</div></footer>
 </body></html>

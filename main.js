@@ -9,7 +9,7 @@
       img.hidden=false;
       box.classList.remove('is-placeholder');
       box.classList.add('has-photo');
-      if(!img.getAttribute('alt')) img.setAttribute('alt','Yeonggyu Lee');
+      if(!img.getAttribute('alt')) img.setAttribute('alt', document.documentElement.lang==='ko' ? '이영규' : 'Yeonggyu Lee');
       box.removeAttribute('role');
       box.removeAttribute('aria-label');
     }

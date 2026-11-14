@@ -222,10 +222,16 @@ section{padding:var(--space-8) 0}
 .contact h2{font-family:var(--serif);font-weight:600;font-size:var(--fs-h2);line-height:var(--lh-heading);margin:0 0 8px}
 .contact p{margin:0 0 20px;color:var(--ink-soft);max-width:var(--measure)}
 .contact ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px}
+.contact a,.foot-contact a{
+  display:inline-block;font-size:var(--fs-sm);font-weight:600;color:var(--accent);
+  text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:6px 12px;background:var(--surface);
+}
+.contact a:hover,.foot-contact a:hover{color:var(--accent-hover);border-color:var(--accent)}
 .ph{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:var(--fs-sm);color:var(--ph);background:var(--ph-bg);border:1px dashed var(--ph-line);border-radius:8px;padding:6px 12px}
+.foot-contact{list-style:none;margin:0 0 16px;padding:22px 0 0;display:flex;flex-wrap:wrap;gap:12px;border-top:1px solid var(--line)}
 
 footer{padding:36px 0 56px;color:var(--muted);font-size:var(--fs-sm)}
-footer .foot{display:flex;justify-content:space-between;gap:var(--space-3);flex-wrap:wrap;border-top:1px solid var(--line);padding-top:22px}
+footer .foot{display:flex;justify-content:space-between;gap:var(--space-3);flex-wrap:wrap}
 
 /* project pages */
 .crumb{padding:28px 0 0;font-size:var(--fs-md)}
