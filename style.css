@@ -256,11 +256,11 @@ figcaption{font-size:var(--fs-sm);color:var(--muted);margin-top:8px;line-height:
 @media (max-width:640px){.pn a:last-child{text-align:left}}
 
 /* reveal */
-.js .hero .reveal{opacity:0;transform:translateY(12px);transition:opacity .6s ease-out,transform .6s ease-out}
-.js .hero .reveal.in{opacity:1;transform:none}
+@keyframes rise{from{transform:translateY(10px)}to{transform:none}}
+.hero .reveal{animation:rise .6s ease-out both}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .js .reveal{opacity:1;transform:none;transition:none}
+  .hero .reveal{animation:none}
 }
 
 @media (max-width:860px){
