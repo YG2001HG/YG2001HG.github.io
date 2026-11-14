@@ -309,4 +309,4 @@ figcaption{font-size:var(--fs-sm);color:var(--muted);margin-top:8px;line-height:
 }
 
 ::selection{background:var(--mark);color:var(--ink)}
-mark{background:linear-gradient(transparent 58%,var(--mark) 58%);color:inherit;padding:0 .08em}
+mark{background:linear-gradient(transparent 60%,var(--mark) 60%);color:inherit;padding:0;-webkit-box-decoration-break:clone;box-decoration-break:clone}
