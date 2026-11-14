@@ -1,5 +1,6 @@
 /* Yeonggyu Lee portfolio, shared styles (EN + KO)
-   One typeface everywhere: Pretendard (Latin + Hangul), weights 400 and 600.
+   Type by role: Geist for headings, numbers and English body (400/600);
+   Pretendard for Korean text. No other faces.
    White paper, near-black ink, one deep green, highlighter yellow for marks.
    Square-ish corners, hairlines, no decorative shadows.
 */
@@ -40,8 +41,8 @@
   --shadow:none;
   --focus:var(--accent);
 
-  --sans:Pretendard,"Apple SD Gothic Neo","Noto Sans KR","Helvetica Neue",Arial,sans-serif;
-  --serif:var(--sans);
+  --sans:Geist,Pretendard,"Helvetica Neue",Arial,sans-serif;
+  --serif:Geist,Pretendard,"Helvetica Neue",Arial,sans-serif;
 
   --fs-xs:.8125rem;   /* 13 */
   --fs-sm:.875rem;    /* 14 */
@@ -85,7 +86,9 @@ body{
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
 }
+html[lang="ko"]{--sans:Pretendard,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
 html[lang="ko"] body{word-break:keep-all;overflow-wrap:break-word}
+.stat b,.big b{font-variant-numeric:tabular-nums}
 
 a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
 a:hover{color:var(--accent-hover)}
