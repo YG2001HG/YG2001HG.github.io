@@ -152,6 +152,20 @@ section{padding:var(--space-8) 0}
 .sec-head h2{font-family:var(--serif);font-weight:600;font-size:2rem;letter-spacing:-.02em;line-height:var(--lh-heading);margin:0;letter-spacing:-.01em}
 .sec-head p{margin:0;color:var(--muted);font-size:var(--fs-md)}
 
+
+/* about (home): photo + short intro, above contact */
+.about{display:flex;align-items:center;gap:var(--space-6)}
+.about-photo{
+  flex:0 0 auto;width:220px;height:220px;border-radius:50%;
+  object-fit:cover;object-position:center;display:block;
+  background:var(--accent-soft);
+}
+.about-copy{flex:1;min-width:0}
+.about-copy p{
+  margin:0;font-size:var(--fs-lead);line-height:var(--lh-lead);
+  color:var(--ink-soft);max-width:var(--measure);
+}
+
 /* cards */
 .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-6) var(--space-5)}
 .card{
@@ -275,6 +289,7 @@ figcaption{font-size:var(--fs-sm);color:var(--muted);margin-top:8px;line-height:
   .hero{gap:var(--space-5)}
   .portrait{width:8.5rem;height:10rem;margin-top:2.1rem}
   .portrait-initials{font-size:2.25rem}
+  .about{flex-direction:column;align-items:flex-start;gap:var(--space-5)}
 }
 @media (max-width:640px){
   body{font-size:1rem}
@@ -282,9 +297,11 @@ figcaption{font-size:var(--fs-sm);color:var(--muted);margin-top:8px;line-height:
   .site-header .wrap{height:auto;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
   .nav{gap:14px;font-size:var(--fs-sm)}
   .nav .hide-sm{display:none}
-  .hero{flex-direction:column-reverse;align-items:flex-start;padding:48px 0 40px;gap:var(--space-5)}
+  .hero{flex-direction:column;align-items:flex-start;padding:48px 0 40px;gap:var(--space-5)}
   .portrait{width:7rem;height:8.25rem;margin-top:0}
   .portrait-initials{font-size:2rem}
+  .about{flex-direction:column;align-items:flex-start;gap:var(--space-5)}
+  .about-photo{width:200px;height:200px}
   section{padding:44px 0}
   .timeline li,.skills{grid-template-columns:1fr;gap:4px}
   .contact{padding:28px 22px}
